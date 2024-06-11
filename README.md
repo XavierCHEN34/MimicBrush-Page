@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the webpage of MimicBrush.
 
-If you find LivePhoto useful for your work please cite:
+If you find MimicBrush useful for your work please cite:
 ```
 @article{chen2024MimicBrush,
       title={Zero-shot Image Editing with Reference Imitation},
