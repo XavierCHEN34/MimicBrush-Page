@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MimicBrush">
+  <meta name="keywords" content="Image Editing, Composition, Texture Transfer">
+  <title>MimicBrush</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <img src="./static/images/logo.png" alt="图标描述" style="width: 80px; height: 80px; vertical-align: middle; margin-right: 0px; position: relative; top: -8px;">
+            MimicBrush: Zero-shot Image Editing with Reference Imitation
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://xavierchen34.github.io/">Xi Chen</a><sup>1</sup></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=mZwJLeUAAAAJ&hl=zh-CN">Yutong Feng</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://mengtingchen.github.io/">Mengting Chen</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://openreview.net/profile?id=~Yiyang_Wang2">Yiyang Wang</a><sup>1</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://jshilong.github.io/">Shilong Zhang</a><sup>1</sup></a>&nbsp</a>&nbsp    
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=8zksQb4AAAAJ&view_op=list_works&sortby=pubdate">Yu Liu</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://shenyujun.github.io/">Yujun Shen</a><sup>3</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://hszhao.github.io/">Hengshuang Zhao</a><sup>1</sup>  
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>2</sup>Alibaba Group</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>3</sup>Ant Group</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=   "https://arxiv.org/abs/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/xichenhku/MimicBrush"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Demo</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/ali-vilab/MimicBrush"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+          <div class="image-area">
+            <img src="./generate_images/Teaser/teaser.png" alt="pipeline" width="100%">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              Diverse editing results produced by MimicBrush, where users only need to specify the
+              to-edit regions in the source image (i.e., white masks) and provide an in-the-wild reference image
+              illustrating how the regions are expected after editing. Our model automatically captures the semantic
+              correspondence between them, and accomplishes the editing in one execution.
+            </p>
+          </div>
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 30px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Video Introduction</h2>
+        <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+          <source src="./generate_images/MimicBrush.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Local Region Editing</h2>
+        <div style="margin-top: 30px; text-align: center;">
+          <img src="./generate_images/PartComp/PartComp.png" alt="PartComp" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Texture Transfer</h2>
+        <div style="margin-top: 30px; text-align: center;">
+          <img src="./generate_images/Texture/texture.png" alt="texture" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Post-processing Refinement</h2>
+        <div style="margin-top: 30px; text-align: center;">
+          <img src="./generate_images/Refine/Refine.png" alt="texture" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Image editing serves as a practical yet challenging task considering the diverse
+            demands from users, where one of the hardest parts is to precisely describe how
+            the edited image should look like. In this work, we present a new form of editing,
+            termed imitative editing, to help users exercise their creativity more conveniently.
+            Concretely, to edit an image region of interest, users are free to directly draw
+            inspiration from some in-the-wild references (e.g., some relative pictures come
+            across online), without having to cope with the fit between the reference and the
+            source. Such a design requires the system to automatically figure out what to
+            expect from the reference to perform the editing. For this purpose, we propose a
+            generative training framework, dubbed MimicBrush, which randomly selects two
+            frames froma video clip, masks some regions of one frame, and learns to recover the
+            masked regions using the information from the other frame. That way, our model,
+            developed from a diffusion prior, is able to capture the semantic correspondence
+            between separate images in a self-supervised manner. We experimentally show the
+            effectiveness of our method under various test cases as well as its superiority over
+            existing alternatives. We also construct a benchmark to facilitate further research.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section> 
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="text-align: center;">Overall Pipeline</h2>
+        <div class="image-area">
+          <img src="./static/images/pipeline.png" alt="Overall Pipeline" width="100%">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            The training process of MimicBrush. First, we randomly sample two frames from a video
+            sequence as the reference and source image. The source image are then masked and exerted with
+            data augmentation. Afterward, we feed the noisy image latent, mask, background latent, and depth
+            latent of the source image into the imitative U-Net. The reference image is also augmented and sent
+            to the reference U-Net. The dual U-Nets are trained to recover the masked area of source image. The
+            attention keys and values of reference U-Net are concatenated with the imitative U-Net to assist the
+            synthesis of the masked regions.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2024MimicBrush,
+      title={Zero-shot Image Editing with Reference Imitation},
+      author={Chen, Xi and Feng, Yutong and Chen, Mengting and Wang, Yiyang and Zhang, Shilong and Liu, Yu and Shen, Yujun and Zhao, Hengshuang},
+      journal={arXiv:},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ali-vilab/MimicBrush" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
