@@ -7,7 +7,7 @@ If you find MimicBrush useful for your work please cite:
 @article{chen2024MimicBrush,
       title={Zero-shot Image Editing with Reference Imitation},
       author={Chen, Xi and Feng, Yutong and Chen, Mengting and Wang, Yiyang and Zhang, Shilong and Liu, Yu and Shen, Yujun and Zhao, Hengshuang},
-      journal={arXiv:},
+      journal={arXiv preprint arXiv:2406.07547},
       year={2024}
     }
 ```
